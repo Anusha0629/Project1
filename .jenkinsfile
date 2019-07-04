@@ -14,14 +14,14 @@ stages{
 
 	stage('Deploy'){
 		steps{
-			bat "mvn compile"
+			
 			echo 'deploy the code'
 			}
 	}
 
 	stage('Test'){
 		steps{
-			bat mvn compile
+			bat "mvn compile"
 			bat "mvn test"
 			}
 	}
